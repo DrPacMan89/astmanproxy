@@ -33,7 +33,6 @@ void *add_server(char *srvspec) {
 	
 	s = srvspec;
 	do {
-		*s = tolower(*s);
 		if ( *s == ',' ) {
 			ccount++;
 			continue;
@@ -83,7 +82,6 @@ void *processline(char *s) {
 	memset (value,0,sizeof value);
 
 	do {
-		*s = tolower(*s);
 
 		if ( *s == ' ' || *s == '\t')
 			continue;

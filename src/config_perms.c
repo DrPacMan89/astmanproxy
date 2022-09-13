@@ -45,7 +45,6 @@ void *add_userperm(char* username, char *userspec, struct proxy_user **pu) {
 			continue;
 		}
 		if( ccount > 0 )
-			*s = tolower(*s);
 		switch(ccount) {
 			case 0:
 			 strncat(user->secret, s, 1);
